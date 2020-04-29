@@ -1,0 +1,20 @@
+[package]
+name = "pygrex"
+version = "0.1.0"
+authors = ["Brendan Knapp <brendan.knapp@gmail.com>"]
+edition = "2018"
+license = "GPL-3.0"
+documentation = "https://github.com/knapply/pygrex"
+homepage = "https://github.com/knapply/pygrex"
+repository = "https://github.com/knapply/pygrex"
+
+[lib]
+name = "pygrex"
+crate-type = ["cdylib"]
+
+[dependencies]
+grex = "1.1.0"
+
+[dependencies.pyo3]
+version = "0.9.2"
+features = ["extension-module"]
